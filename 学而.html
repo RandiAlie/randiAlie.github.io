@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学而</title>
+        <style>
+            body{
+                background-color: rgba(248, 245, 245, 0.969);
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+    .header
+    {
+    background-color: white;
+    width: 100%;
+    height: 60px; 
+    box-shadow: 2px 3px 5px #ccc;
+    }
+    .header-nav{
+        background-color: white;
+        margin: 0 150px 0 150px;
+       display: flex;
+       width: 80%;
+        height:60px ;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        align-content: space-between;
+    }
+   
+    .left{
+        display: flex;
+    }
+   .left img{
+    display: flex;
+    width: 55px;
+    height: 50px;
+    margin-top: 5px;
+  
+   }
+   .left h1{
+    display: flex;
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+    line-height: 60px;
+    color: rgb(32, 209, 141);
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+   }
+   .center ul li{
+    float: left;
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 38px;
+    font-size: 25px;
+    font-weight: 400;
+   }
+   .center ul li a{
+    text-decoration: none;
+    color: #333333;
+   }
+   .center ul li a:hover{
+    text-decoration: overline;
+    color: red;
+   }
+.search{
+    margin-left: 150px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    
+}
+.search>input{
+    
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    width: 300px;
+    height: 30px;
+    margin-top: 15px;
+}
+.search>img{
+    margin-left:-2px;
+    width: 80px;
+    height: 38px;
+    margin-top: 12px;
+}
+.right{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    margin-right: 0;
+    margin-left: auto;
+}
+.right img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+    order: 2;
+}
+.right button{
+    display: flex;
+    margin-left: 35px;
+    background-color: rgb(32, 209, 141);
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-top: 13px;
+    border-style: solid;
+    border-width: 0;
+    letter-spacing: 15px;
+    font-weight: 400;
+      font-size:15px ;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+}
+.picture{
+    width: 80%;
+   height:300px;
+  margin:0 150px 0 150px;
+  overflow: hidden;
+}
+.picture img
+    {
+   width: 103%;
+   height:300px;
+
+    }
+    .rectangle{
+        width: 80%;
+        margin:-5px 150px 0 150px;
+        height: 230px;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        background-color: white;
+    }
+    .circle{
+        line-height: 10px;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-color: rgb(32, 209, 141);
+        border-style: solid;
+        border-width: 3px;
+        color:rgb(32, 209, 141) ;
+        justify-content: center;
+        align-items:center;
+        font-size: 50px;
+        font-weight: 100;
+    }
+    .content{
+        width: 80%;
+        height: 130px;
+        margin: 0 150px 0 150px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+    
+
+    .content ul li
+    {
+        letter-spacing: 1px;
+       
+        
+    }
+    .content ul.order
+    {
+       height: 100%;
+        border-right-style: dashed;
+        border-right-color:rgb(221, 217, 217);
+        
+        
+    }
+    .content ul li::first-line
+    {
+        font-weight: 100;
+        font-size: 20px;
+    
+    }
+    .content ul li {
+        color: #333333;
+        font-weight: 100;
+        font-size: 10px;
+    }
+    .content ul li:hover 
+    {
+       color: red;
+    }
+     
+.rectangle2{
+    width: 80%;
+        margin:0 150px 0 150px;
+        height: 120px;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        background-color: white;
+}
+.dashed-circle{
+   
+        display: flex;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        border-color: rgb(32, 209, 141);
+        border-style: solid;
+        border-width: 2px;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        font-size: 37px;
+        font-weight:100;
+        color:rgb(32, 209, 141) ;
+    
+    }
+    .con{
+        margin: 20px 150px 0 150px;
+        background-color: white;
+        width: 80%;
+        height: 300px;
+    }
+    .title{
+        display: flex;
+        margin: 20px 150px 0 150px;
+        background-color: white;
+        width: 80%;
+        height: 45px;
+        justify-content: center;
+        flex-direction: column;
+    }
+     h3{
+        text-align: center;
+        margin-bottom: 3px;
+        color: #333333;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    h6
+    {
+        text-align: center;
+        letter-spacing: 1px;
+        color: rgb(32, 209, 141);
+    }
+    .first{display: flex;
+        width: 80%;
+        height: 70px;
+        margin: 60px 150px 0 150px;
+        background-color: white;
+    }
+    .second{
+        display: flex;
+        width: 80%;
+        height: 70px;
+        margin: 2px 150px 0 150px;
+        background-color: white;
+    }
+    .item1{
+       width: 20%; 
+       height: 68px;
+       text-align: center;
+       color:#505050;
+       border-color: rgb(32, 209, 141);
+       border-style: solid;
+       border-width: 2px;
+    
+    }
+    .item2{
+       width: 20%; 
+       height: 70px;
+       border-color: white;
+       border-style: solid;
+       border-width: 1px;
+       text-align: center;
+       line-height: 20px;
+    }
+    .item2 a{
+        color: red;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 70px;
+    }
+    .item3{
+       width: 20%; 
+       height: 70px;
+       color: white;
+       text-align: center;
+       background-color: rgb(32, 209, 141);
+       border-color: rgb(32, 209, 141);
+       border-width: 2px;
+       border-style: solid;
+       border-bottom:none;
+    }
+    .footer{
+        margin: 0 150px 0 150px;
+        background-color: white;
+        width: 80%;
+    }
+    .lecture{
+        margin: 20px 150px 100px 150px;
+        background-color: white;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+    }
+    .lecture1{
+        display: flex;
+        width: 25%;
+        height: 85px;
+        background-color: rgb(254, 104, 104);
+        margin-right: 20px;
+        color: white;
+        font-weight: 100;
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    div.lecture1::first-line
+    {
+        font-weight: 100;
+        font-size: 28px; 
+    }
+    .lecture1 img{
+        width: 166px;
+        height: 50px;
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        top:-50px;
+    }
+    .lecture1:hover{
+        background-color: red;
+        
+    }
+    .lecture1:hover .image{
+        visibility: visible;
+    }
+    </style>
+    </head>
+    <body>
+    
+        <div class="header">
+        <div class="header-nav">
+             <div  class="left">
+        <img src="image/图片1.png" >
+        <h1>学而</h1>
+             </div>
+                 <div class="center">
+        <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">分类查看</a></li>
+        </ul>
+                 </div>
+                 <div class="search">
+        <input type="search" name="search">
+         <img src="image/图片2.png">
+        </div>
+        <div  class="right">
+            <img src="image/图片3.png">
+            <button type="button">退出</button>
+        </div>
+        </div>
+        </div>
+<div class="picture">
+    <img src="image/图片5.png">
+    </div>
+    <div class="rectangle">
+        <div class="circle">  公</div>
+        <div class="circle">  通</div>
+        <div class="circle"> 素 </div>
+         <div class="circle"> 专 </div>
+    </div>
+<div class="content">
+    <ul class="order">
+    <li>界面与设计应用<br>
+    房子</li>
+    <li>java程序编程<br>
+    赵三金</li>
+    <li>设计师的自我修养<br>
+    分享课程</li>
+    </ul>
+    <ul class="order">
+        <li>计算机基础<br>
+            胡薇</li>
+            <li>植物观赏学基础<br>
+            韩一尾</li>
+            <li>生活常识101<br>
+            分享</li>
+    </ul>
+    <ul class="order">
+        <li>
+            新生引导课堂<br>
+            开学季</li>
+            <li>党课精神研讨课<br>
+                分享课程</li>
+                <li>专业方向<br>
+                    毕业生</li>
+    </ul>
+    <ul >
+        <li>影视广告摄影基础<br>
+            分享课程</li>
+            <li>程序员的养成<br>
+                赵多金</li>
+                <li>如何让设计师改稿<br>
+                    甲方</li>
+                </ul>
+</div>
+<div class="rectangle2">
+    <div class="dashed-circle">十 </div>
+    <div class="dashed-circle">十</div>
+    <div class="dashed-circle"> 十</div>
+    <div class="dashed-circle">十 </div>
+</div>
+<div class="con">
+    <div class="title">
+<h3>最热课程动态</h3>
+<h6>精心为您挑选最佳口碑课程排行NO.1-NO.5</h6>
+    </div>
+    <div class="first">
+<div class="item1">
+常勇<br>
+《化学生活》
+</div>
+<div class="item2">
+<a href="#">02
+</a>
+</div>
+<div class="item3">
+张勇<br>
+《java语言程序<br>
+设计》
+</div>
+<div class="item2">
+<a href="#">04</a>
+</div>
+<div class="item1">
+张国<br>
+《计算机组装》
+</div>
+    </div>
+<div class="second">
+    <div class="item2">
+        <a href="#">01</a>
+    </div>
+    <div class="item1">
+        李达<br>
+        《大学生语文》
+    </div>
+    <div class="item2">
+<a href="#">03</a>
+    </div>
+    <div class="item1">
+苏燕<br>
+《视觉语言》
+    </div>
+    <div class="item2">
+<a href="#">05</a>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="title">
+        <h3>猜你喜欢课程</h3>
+        <h6>根据您的浏览记录，推荐相似课程列表</h6>
+            </div>
+            <div class="lecture">
+<div class="lecture1">《毛泽东思想》<br>赵三金 <img src="image/图片4.png" class="image" >   </div>
+<div class="lecture1">《邓小平理论》<br>胡一薇<img src="image/图片4.png" class="image" ></div>
+<div class="lecture1">《科学发展观》<br>梁非凡<img src="image/图片4.png" class="image"  ></div>
+<div class="lecture1">《三个代表》<br>韩一尾<img src="image/图片4.png" class="image" ></div>
+            </div>
+</div>
+    </div>
+    </body>
+</html>
